@@ -32,6 +32,6 @@
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/CodeAlpha_MusicPlayer.git
+git clone https://github.com/Tejashwini-SB/CodeAlpha-MusicPlayer.git
 cd CodeAlpha_MusicPlayer
 
