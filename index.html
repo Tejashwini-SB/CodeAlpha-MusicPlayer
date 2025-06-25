@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="music-container">
+        <div class="music-header">
+            <h1 class="player-title">Harmony Player</h1>
+        </div>
+        
+        <div class="music-info">
+            <p class="song-title" id="song-title">Blinding Lights</p>
+            <p class="artist" id="artist">The Weeknd</p>
+        </div>
+        
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="time-info">
+            <span id="current-time">0:00</span>
+            <span id="duration">3:20</span>
+        </div>
+        
+        <div class="controls">
+            <button id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 19 2 12 11 5 11 19"></polygon>
+                    <polygon points="22 19 13 12 22 5 22 19"></polygon>
+                </svg>
+            </button>
+            <button id="play" class="main-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="play-icon">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+            </button>
+            <button id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 19 22 12 13 5 13 19"></polygon>
+                    <polygon points="2 19 11 12 2 5 2 19"></polygon>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="volume-control">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+            </svg>
+            <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+        </div>
+        
+        <div class="settings">
+            <div class="autoplay-toggle">
+                <span>Autoplay</span>
+                <label class="toggle">
+                    <input type="checkbox" id="autoplay">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="shuffle-toggle">
+                <span>Shuffle</span>
+                <label class="toggle">
+                    <input type="checkbox" id="shuffle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="playlist" id="playlist">
+            <!-- Playlist items will be added dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
