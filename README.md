@@ -26,6 +26,11 @@
 - **JavaScript** – Functional controls, dynamic playlist handling
 
 ---
+## 📌 Live Demo
+
+🔗 [View Live on GitHub Pages](https://tejashwini-sb.github.io/CodeAlpha-MusicPlayer/)
+
+---
 
 ## 🚀 Getting Started
 
